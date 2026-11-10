@@ -1,0 +1,112 @@
+{
+  "app_name": "AuraFinance - AI Personal Finance Operating System",
+  "app_type": "saas_app dashboard",
+  "archetype": "THE PERFORMANCE PRO / SWISS TACTICAL HYBRID",
+  "theme": {
+    "default_mode": "dark",
+    "theme_toggle_supported": true,
+    "dark_theme_bg": "#090D0E",
+    "dark_card_bg": "#11181A",
+    "dark_border": "rgba(255, 255, 255, 0.08)",
+    "light_theme_bg": "#F6F8F7",
+    "light_card_bg": "#FFFFFF",
+    "light_border": "rgba(0, 0, 0, 0.08)"
+  },
+  "colors": {
+    "primary_emerald": "#10B981",
+    "primary_emerald_glow": "rgba(16, 185, 129, 0.15)",
+    "accent_cyan": "#06B6D4",
+    "accent_gold": "#EAB308",
+    "accent_violet": "#8B5CF6",
+    "warning_amber": "#F59E0B",
+    "danger_rose": "#F43F5E",
+    "neutral_dark": {
+      "bg": "#090D0E",
+      "surface": "#111A1D",
+      "surface_elevated": "#1A2428",
+      "border": "#223136",
+      "text_primary": "#F1F5F9",
+      "text_secondary": "#94A3B8",
+      "text_muted": "#64748B"
+    },
+    "neutral_light": {
+      "bg": "#F4F7F6",
+      "surface": "#FFFFFF",
+      "surface_elevated": "#EAEFEA",
+      "border": "#E2E8F0",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569",
+      "text_muted": "#94A3B8"
+    }
+  },
+  "typography": {
+    "heading_font": "Outfit, sans-serif",
+    "body_font": "Inter, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "font_files_js_note": "Ensure Google Fonts link for Outfit, Inter, JetBrains Mono is in index.html or imported in index.css",
+    "hierarchy": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3_card": "text-xl sm:text-2xl font-semibold tracking-normal",
+      "h4_widget": "text-lg font-medium",
+      "body": "text-sm sm:text-base leading-relaxed",
+      "mono_data": "font-mono tracking-wider font-semibold"
+    }
+  },
+  "layout_and_spacing": {
+    "grid_strategy": "High Density Tactical Grid (Mode B for Dashboards) + Bento asymmetric sections for AI Insights",
+    "container_padding": "p-4 sm:p-6 lg:p-8",
+    "gap_standard": "gap-4 sm:gap-6",
+    "card_internal_padding": "p-5 sm:p-6",
+    "border_radius": "rounded-xl for cards, rounded-2xl for hero widgets, rounded-full for badges and action pills"
+  },
+  "key_features_design_specs": {
+    "ai_financial_brain": {
+      "vibe": "Command center with instant actionable financial summaries",
+      "style": "Subtle emerald glow backdrop, live badge indicator, clean narrative bullet cards with risk labels"
+    },
+    "signature_next_500_eur_advisor": {
+      "vibe": "Interactive high-contrast decision engine",
+      "interaction": "Slider + custom EUR input field with preset chips (€100, €500, €1,000, €5,000). On click/type -> animated split distribution with logic tags (Risk level, Expected outcome, Tax efficiency, Emergency reserve impact)."
+    },
+    "smart_asset_allocator": {
+      "vibe": "Institutional portfolio manager view",
+      "components": "Interactive Recharts pie/donut breakdown across Stocks/ETFs, Index Funds, Precious Metals, Real Estate, Crypto, Cash with instant reasoning hover details & rebalancing suggestions."
+    },
+    "wealth_predictor": {
+      "vibe": "Scenario simulation laboratory",
+      "components": "Interactive age & inflation adjusted projection chart with 3 scenario toggles (Conservative, Balanced, High Growth), input sliders for monthly contributions, horizon years, and target goal age."
+    },
+    "expense_detector": {
+      "vibe": "Audit radar for financial leaks",
+      "components": "Subscription creep detector badges, unusual transaction flag list with filter tags, recurring billing calendar preview, manual transaction editor."
+    },
+    "opportunity_scanner": {
+      "vibe": "Live ticker & market opportunity monitor",
+      "components": "Real-time mock/live fetch for BTC, ETH, Gold, Silver, S&P500 EUR prices, volatility alerts, pros/cons breakdown cards for emerging opportunities."
+    },
+    "trust_and_safety": {
+      "banner": "Prominent sticky or persistent 'Read-Only & Educational Disclaimer' bar with zero-execution guarantee badge.",
+      "gdpr": "One-click JSON Data Export and Instant Account Data Delete in Settings."
+    }
+  },
+  "image_urls": {
+    "dashboard_analytics_preview": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "crypto_stock_chart": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "gold_bullion_metals": "https://images.unsplash.com/photo-1624365168056-daf44387e2ae?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "user_avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "testing_attributes": {
+    "rule": "ALL interactive buttons, inputs, tabs, modal triggers, and key financial metric displays MUST have explicit data-testid attributes.",
+    "convention": "kebab-case role-based format (e.g. data-testid=\"next-amount-input\", data-testid=\"net-worth-display\", data-testid=\"google-login-button\", data-testid=\"gdpr-export-button\")"
+  },
+  "instructions_to_main_agent": [
+    "Use JavaScript (.js and .jsx files) as specified in the project stack.",
+    "Implement Google Sign-In button simulation alongside standard Email/Password authentication tab.",
+    "Ensure currency formatting defaults to EUR (€) with locale formatting (e.g., €12,450.00).",
+    "Provide interactive sample data editing modal or drawer so users can tweak income, debts, and assets dynamically.",
+    "Add persistent banner: 'Read-Only Mode — Educational & Analytics Tool Only. Not Regulated Financial Advice.'",
+    "Implement Sonner toasts for all user interactions (e.g. data export, sample data reset, input updates).",
+    "Avoid generic AI slop: use clean Swiss card structures with precise 1px borders, subtle hover elevations, crisp typography, and high contrast."
+  ]
+}
